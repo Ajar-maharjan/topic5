@@ -16,6 +16,12 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
 
     Context context;
     List<Contacts> contactsList;
+
+    public ContactsAdapter(Context context, List<Contacts> contactsList) {
+        this.context = context;
+        this.contactsList = contactsList;
+    }
+
     @NonNull
     @Override
     public ContactViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
