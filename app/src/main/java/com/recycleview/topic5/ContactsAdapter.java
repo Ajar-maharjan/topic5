@@ -10,8 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactViewHolder>{
 
@@ -45,7 +46,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     }
 
     public class ContactViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgProfile;
+        CircleImageView imgProfile;
         TextView tvName, tvPhone;
         public ContactViewHolder(@NonNull View itemView) {
             super(itemView);
